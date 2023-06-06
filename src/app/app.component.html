@@ -10,25 +10,34 @@
     <label for="firstName">First name</label>
     <input id="firstName" [(value)]="firstName" />
   </div>
+
+  <div class="form-field">
+    <label for="surName">Surname</label>
+    <input id="surName" />
+  </div>
+
+  <div class="form-field">
+    <label for="age">Age</label>
+    <input id="age" />
+  </div>
+
+  <div class="button-group">
+    <button type="button" class="button button-primary">Submit</button>
+    <button
+      type="button"
+      class="button button-secondary"
+      (click)="modalRef.close()"
+    >
+      Cancel
+    </button>
+  </div>
 </ng-template>
-
-<div class="form-field">
-  <label for="surName">Surname</label>
-  <input id="surName" />
+<!-- <div class="titulocentral">
+  <h1>Olá Suzana</h1>
 </div>
-
-<div class="form-field">
-  <label for="age">Age</label>
-  <input id="age" />
-</div>
-
-<div class="button-group">
-  <button type="button" class="button button-primary">Submit</button>
-  <button
-    type="button"
-    class="button button-secondary"
-    (click)="(modalRef.close)"
-  >
-    Cancel
-  </button>
-</div>
+<div class="centralizado">
+  <img
+    src="https://usagif.com/wp-content/uploads/gify/dancing-cat-33-title.gif"
+    alt=""
+  />
+</div> -->
