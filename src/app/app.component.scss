@@ -8,3 +8,29 @@
 .centralizado{
   text-align: center;
 }
+
+.content-animation {
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+
+.content-animation2 {
+  animation: myAnim 0.7s ease 0s 1 normal forwards;
+}
+
+.content-animation3 {
+  animation: myAnim 0.9s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotateY(100deg);
+		transform-origin: left;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateY(0);
+		transform-origin: left;
+	}
+}

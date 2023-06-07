@@ -1,5 +1,8 @@
-<div class="modal-overlay">
-  <div class="modal-content">
+<div class="modal-overlay" (click)="modalRef.close()">
+  <div
+    class="modal-content scale-up-ver-center shadow-drop-2-center"
+    (click)="$event.stopPropagation()"
+  >
     <h1 class="modal-title">{{ config.title }}</h1>
     <ng-container *ngTemplateOutlet="config.templateRef"></ng-container>
   </div>

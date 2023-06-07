@@ -6,21 +6,24 @@
 </button>
 
 <ng-template #modal>
-  <div class="form-field">
+  <div class="form-field content-animation">
     <label for="firstName">First name</label>
     <input id="firstName" [(value)]="firstName" />
   </div>
 
-  <div class="form-field">
+  <div class="form-field content-animation2">
     <label for="surName">Surname</label>
     <input id="surName" />
   </div>
 
-  <div class="form-field">
+  <div class="form-field content-animation3">
     <label for="age">Age</label>
     <input id="age" />
   </div>
 
+  <label for="info">Subscribe to newsletter</label>
+  <input type="checkbox" id="info" (change)="info = !info" />
+  <p *ngIf="info">This is a placeholder for more information</p>
   <div class="button-group">
     <button type="button" class="button button-primary">Submit</button>
     <button
