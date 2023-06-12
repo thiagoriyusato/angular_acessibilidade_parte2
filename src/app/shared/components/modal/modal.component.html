@@ -1,5 +1,11 @@
-<div class="modal-overlay" (click)="modalRef.close()">
+<div
+  class="modal-overlay"
+  (click)="modalRef.close()"
+  (keydown.esc)="modalRef.close()"
+>
   <div
+    appFocusTrap
+    appFocusBack
     class="modal-content scale-up-ver-center shadow-drop-2-center"
     (click)="$event.stopPropagation()"
   >
